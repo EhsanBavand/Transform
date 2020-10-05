@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS3 Transforms</title>
+<style>
+div.container div{
+  position: absolute;
+  margin:100px;
+  width: 300px;
+  height: 300px;
+}
+div .red {
+	background: red;
+  border: 2px solid green;
+}
+div .yellow {
+	background: #f9f943;
+  transform: rotate(45deg) scale(.7, .7);
+}
+div .blue {
+	background: blue;
+  transform: scale(.4, .4);
+}
+div .blue.rotate{
+  transform: rotate(45deg) scale(.4, .4);
+ }
+
+</style>
+</head>
+<body>
+  <div class="container">
+  	<div class="red"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+    <div class="blue rotate"></div>
+  </div>
+</body>
+</html>
